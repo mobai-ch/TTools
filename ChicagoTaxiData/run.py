@@ -16,6 +16,8 @@ import pytz
 import numpy as np
 import argparse
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+
 class ChicagoTaxiUtil:
     def __init__(self) -> None:
         self.RawDataPath = "./RawData/Taxi_Trips.csv"

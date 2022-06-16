@@ -3,6 +3,8 @@ import pickle
 from DataUtil.Processor import Processor
 import argparse
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+
 def run(timeStr):
     '''
     Create the folder and Get the road network from the road roadnetwork directory

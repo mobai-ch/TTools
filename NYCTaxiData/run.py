@@ -8,6 +8,8 @@ import pytz
 from tqdm import tqdm
 import argparse
 
+os.environ["CUDA_VISIBLE_DEVICES"] = "0,1"
+
 '''
 index of the row data: Only available in the date before 2016.12.30
 
